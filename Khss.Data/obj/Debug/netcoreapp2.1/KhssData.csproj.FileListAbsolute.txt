@@ -1,0 +1,10 @@
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\bin\Debug\netcoreapp2.1\KhssData.deps.json
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\bin\Debug\netcoreapp2.1\KhssData.runtimeconfig.json
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\bin\Debug\netcoreapp2.1\KhssData.runtimeconfig.dev.json
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\bin\Debug\netcoreapp2.1\KhssData.dll
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\bin\Debug\netcoreapp2.1\KhssData.pdb
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\obj\Debug\netcoreapp2.1\KhssData.csproj.CoreCompileInputs.cache
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\obj\Debug\netcoreapp2.1\KhssData.AssemblyInfoInputs.cache
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\obj\Debug\netcoreapp2.1\KhssData.AssemblyInfo.cs
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\obj\Debug\netcoreapp2.1\KhssData.dll
+C:\Users\Wahib\source\repos\KhssApi\Khss.Data\obj\Debug\netcoreapp2.1\KhssData.pdb

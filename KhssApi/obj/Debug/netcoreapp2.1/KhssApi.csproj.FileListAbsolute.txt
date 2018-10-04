@@ -1,0 +1,5 @@
+C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.csproj.CoreCompileInputs.cache
+C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.RazorAssemblyInfo.cache
+C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.RazorAssemblyInfo.cs
+C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.AssemblyInfoInputs.cache
+C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.AssemblyInfo.cs
