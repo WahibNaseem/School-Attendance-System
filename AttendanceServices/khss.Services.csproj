@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Khss.Data\KhssData.csproj" />
+    <ProjectReference Include="..\ServiceContracts\Khss.ServiceContracts.csproj" />
+  </ItemGroup>
+
+</Project>

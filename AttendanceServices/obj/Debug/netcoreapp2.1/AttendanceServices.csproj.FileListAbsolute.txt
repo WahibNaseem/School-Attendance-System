@@ -1,0 +1,8 @@
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\bin\Debug\netcoreapp2.1\AttendanceServices.deps.json
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\bin\Debug\netcoreapp2.1\AttendanceServices.dll
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\bin\Debug\netcoreapp2.1\AttendanceServices.pdb
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\obj\Debug\netcoreapp2.1\AttendanceServices.csproj.CoreCompileInputs.cache
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\obj\Debug\netcoreapp2.1\AttendanceServices.AssemblyInfoInputs.cache
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\obj\Debug\netcoreapp2.1\AttendanceServices.AssemblyInfo.cs
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\obj\Debug\netcoreapp2.1\AttendanceServices.dll
+C:\code workcamp\KHSS\KhssApi\AttendanceServices\obj\Debug\netcoreapp2.1\AttendanceServices.pdb
