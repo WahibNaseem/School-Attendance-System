@@ -4,14 +4,16 @@ using KhssData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace KhssData.Migrations
 {
     [DbContext(typeof(KhssContext))]
-    partial class KhssContextModelSnapshot : ModelSnapshot
+    [Migration("20181010072529_Khssdb-v0")]
+    partial class Khssdbv0
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -21,7 +23,7 @@ namespace KhssData.Migrations
 
             modelBuilder.Entity("KhssData.DomainModels.Attendance.Attendance", b =>
                 {
-                    b.Property<int>("AttendanceId")
+                    b.Property<int>("AttendaceId")
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
@@ -41,9 +43,9 @@ namespace KhssData.Migrations
 
                     b.Property<DateTime>("ModifiedDate");
 
-                    b.Property<int>("StudentClassId");
+                    b.Property<int?>("StudentClassId");
 
-                    b.HasKey("AttendanceId");
+                    b.HasKey("AttendaceId");
 
                     b.HasIndex("StudentClassId");
 
@@ -127,7 +129,7 @@ namespace KhssData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("ClassId");
+                    b.Property<int?>("ClassId");
 
                     b.Property<int>("CreatedBy");
 
@@ -139,9 +141,9 @@ namespace KhssData.Migrations
 
                     b.Property<DateTime>("ModifiedDate");
 
-                    b.Property<int>("SectionId");
+                    b.Property<int?>("SectionId");
 
-                    b.Property<int>("StudentId");
+                    b.Property<int?>("StudentId");
 
                     b.HasKey("StudentClassId");
 
@@ -157,27 +159,23 @@ namespace KhssData.Migrations
             modelBuilder.Entity("KhssData.DomainModels.Attendance.Attendance", b =>
                 {
                     b.HasOne("KhssData.DomainModels.Attendance.StudentClass", "StudentClass")
-                        .WithMany("Attendances")
-                        .HasForeignKey("StudentClassId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("StudentClassId");
                 });
 
             modelBuilder.Entity("KhssData.DomainModels.Attendance.StudentClass", b =>
                 {
                     b.HasOne("KhssData.DomainModels.Attendance.Class", "Class")
-                        .WithMany("StudentClasses")
-                        .HasForeignKey("ClassId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("ClassId");
 
                     b.HasOne("KhssData.DomainModels.Attendance.Section", "Section")
-                        .WithMany("StudentClasses")
-                        .HasForeignKey("SectionId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("SectionId");
 
                     b.HasOne("KhssData.DomainModels.Attendance.Student", "Student")
-                        .WithMany("StudentClasses")
-                        .HasForeignKey("StudentId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("StudentId");
                 });
 #pragma warning restore 612, 618
         }

@@ -4,14 +4,16 @@ using KhssData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace KhssData.Migrations
 {
     [DbContext(typeof(KhssContext))]
-    partial class KhssContextModelSnapshot : ModelSnapshot
+    [Migration("20181010073823_Khssdb-v2")]
+    partial class Khssdbv2
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

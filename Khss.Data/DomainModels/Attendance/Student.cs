@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace KhssData.DomainModels.Attendance
 {  
@@ -9,6 +10,8 @@ namespace KhssData.DomainModels.Attendance
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Phone { get; set; }
-        public string Address { get; set; }        
+        public string Address { get; set; }
+
+        public virtual ICollection<StudentClass> StudentClasses { get; set; }
     }
 }
