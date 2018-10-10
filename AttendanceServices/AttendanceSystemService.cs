@@ -1,8 +1,8 @@
 ﻿using Khss.ServiceContracts;
 using KhssData;
 using KhssData.DomainModels.Attendance;
+using Microsoft.EntityFrameworkCore;
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 namespace khss.Services
@@ -11,18 +11,19 @@ namespace khss.Services
     {
         #region Life Cycle
         private readonly KhssContext _context;
-        public AttendanceSystemService(KhssContext context) => this._context = context;  
-        
+        public AttendanceSystemService(KhssContext context) => this._context = context;
+
         #endregion
 
         #region Classes Service Implemented
         public IQueryable<Class> GetAllClasses()
         {
-            throw new NotImplementedException();
+            return _context.Classes;
         }
         public Class GetClassById(int id)
         {
-            throw new NotImplementedException();
+            return GetAllClasses()
+                      .SingleOrDefault(cls => cls.ClassId == id);
         }
         public void AddClass(Class newClass)
         {
@@ -36,13 +37,14 @@ namespace khss.Services
         #endregion
 
         #region Section Service Implemented        
-        public IQueryable<Section> GetAllSection()
+        public IQueryable<Section> GetAllSections()
         {
-            throw new NotImplementedException();
+            return _context.Sections;
         }
         public Section GetSectionById(int id)
         {
-            throw new NotImplementedException();
+            return GetAllSections()
+                    .SingleOrDefault(section => section.SectionId == id);
         }
         public void AddSection(Section newSection)
         {
@@ -57,11 +59,12 @@ namespace khss.Services
         #region Student Service Implemented
         public IQueryable<Student> GetAllStudents()
         {
-            throw new NotImplementedException();
+            return _context.Students;
         }
         public Student GetStudentById(int id)
         {
-            throw new NotImplementedException();
+            return GetAllStudents()
+                     .SingleOrDefault(student => student.StudentId == id);
         }
         public void AddStudent(Student newStudent)
         {
@@ -77,15 +80,18 @@ namespace khss.Services
         #region Attendance Service Implemented
         public IQueryable<Attendance> GetAllAttendances()
         {
-            throw new NotImplementedException();
+            return _context.Attendances;
         }
         public Attendance GetAttendanceById(int id)
         {
-            throw new NotImplementedException();
+            return GetAllAttendances()
+                        .SingleOrDefault(attendance => attendance.AttendanceId == id);
         }
-       public IQueryable<Attendance> GetAllAttendancesByStudentId(int studenClasstId)
+        public IQueryable<Attendance> GetAllAttendancesByStudentClassId(int studenClasstId)
         {
-            throw new NotImplementedException();
+            return GetAllAttendances()
+                        .Include(attendance => attendance.StudentClass)
+                        .Where(attendance => attendance.StudentClassId == studenClasstId);
         }
         public void AddAttendance(Attendance newAttendance)
         {
@@ -101,19 +107,31 @@ namespace khss.Services
         #region StudentClass Service Implemented        
         public IQueryable<StudentClass> GetAllStudentClasses()
         {
-            throw new NotImplementedException();
+            return _context.StudentClasses
+                        .Include(student => student.Student)
+                        .Include(cls => cls.Class)
+                        .Include(section => section.Section);
         }
-        public IQueryable<StudentClass> GetStudentClassByStudentId(int id)
+        public IQueryable<StudentClass> GetStudentClassByStudentId(int studentId)
         {
-            throw new NotImplementedException();
+            return GetAllStudentClasses()
+                        .Where(student => student.StudentId == studentId);
         }
-        public IQueryable<StudentClass> GetStudentClassbyClassId(int id)
+        public IQueryable<StudentClass> GetStudentClassbyClassId(int clasesId)
         {
-            throw new NotImplementedException();
+            return GetAllStudentClasses()
+                        .Where(cls => cls.ClassId == clasesId);
         }
-        public IQueryable<StudentClass> GetStudentClassBySectionId(int id)
+        public IQueryable<StudentClass> GetStudentClassBySectionId(int sectionId)
         {
-            throw new NotImplementedException();
+            return GetAllStudentClasses()
+                        .Where(section => section.SectionId == sectionId);
+        }
+        public IQueryable<StudentClass> GetStudentByClassAndSectionId(int classId, int sectionId)
+        {
+            return GetAllStudentClasses()
+                        .Where(stdcls => stdcls.ClassId == classId &&
+                        stdcls.SectionId == sectionId);
         }
         #endregion
     }

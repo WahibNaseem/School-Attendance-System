@@ -16,7 +16,7 @@ namespace Khss.ServiceContracts
         #endregion
 
         #region Service Method for Section Domain
-        IQueryable<Section> GetAllSection();
+        IQueryable<Section> GetAllSections();
         Section GetSectionById(int id);
         void AddSection(Section newSection);
         int DelteSection(int id);
@@ -34,7 +34,7 @@ namespace Khss.ServiceContracts
         #region Service Method for Attendance Domain
         IQueryable<Attendance> GetAllAttendances();
         Attendance GetAttendanceById(int id);
-        IQueryable<Attendance> GetAllAttendancesByStudentId(int studenClasstId);
+        IQueryable<Attendance> GetAllAttendancesByStudentClassId(int studenClasstId);
         void AddAttendance(Attendance newAttendance);
         int DeleteAttendance(int id);
         #endregion
@@ -44,6 +44,7 @@ namespace Khss.ServiceContracts
         IQueryable<StudentClass> GetStudentClassByStudentId(int id);
         IQueryable<StudentClass> GetStudentClassbyClassId(int id);
         IQueryable<StudentClass> GetStudentClassBySectionId(int id);
+        IQueryable<StudentClass> GetStudentByClassAndSectionId(int classId, int sectionId);
         
         #endregion
     }
