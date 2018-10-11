@@ -5,6 +5,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Migrations\20181011053423_khssdb-v2.1.1.1 Alter Foreignkey Column.cs" />
+    <Compile Remove="Migrations\20181011053522_khssdb-v2.1.1.1 Alter Foreignkey Columns.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Folder Include="DomainModels\Auth\" />
   </ItemGroup>
 

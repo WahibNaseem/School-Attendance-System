@@ -1,8 +1,11 @@
 ﻿using System;
+using khss.Services;
+using Khss.ServiceContracts;
 using KhssData;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -20,7 +23,11 @@ namespace KhssApi
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1).AddXmlDataContractSerializerFormatters();
             services.AddSingleton(Configuration);
+            services.AddTransient<IAttendanceSystemService, AttendanceSystemService>();
+
+
             services.AddDbContext<KhssContext>(options
                 => options.UseSqlServer(Configuration.GetConnectionString("KhssConnection"), opts
                => opts.CommandTimeout((int)TimeSpan.FromMinutes(10).TotalSeconds)));
@@ -33,11 +40,15 @@ namespace KhssApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
-            app.Run(async (context) =>
+            else
             {
-                await context.Response.WriteAsync("Hello World!");
-            });
+               app.UseHsts();
+            }
+
+            //Use this method for redirec the http request 
+            app.UseHttpsRedirection();
+            //we add this into the middle layer to run api
+            app.UseMvc();
         }
     }
 }

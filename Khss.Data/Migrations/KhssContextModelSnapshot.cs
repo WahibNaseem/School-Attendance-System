@@ -31,21 +31,21 @@ namespace KhssData.Migrations
                         .IsRequired()
                         .HasConversion(new ValueConverter<string, string>(v => default(string), v => default(string), new ConverterMappingHints(size: 1)));
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<int?>("CreatedBy");
 
-                    b.Property<DateTime>("CreatedDate");
+                    b.Property<DateTime?>("CreatedDate");
 
                     b.Property<string>("Description");
 
-                    b.Property<int>("ModifiedBy");
+                    b.Property<int?>("ModifiedBy");
 
-                    b.Property<DateTime>("ModifiedDate");
+                    b.Property<DateTime?>("ModifiedDate");
 
-                    b.Property<int>("StudentClassId");
+                    b.Property<int>("StudentClassRefId");
 
                     b.HasKey("AttendanceId");
 
-                    b.HasIndex("StudentClassId");
+                    b.HasIndex("StudentClassRefId");
 
                     b.ToTable("Attendances");
                 });
@@ -58,13 +58,13 @@ namespace KhssData.Migrations
 
                     b.Property<string>("ClassName");
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<int?>("CreatedBy");
 
-                    b.Property<DateTime>("CreatedDate");
+                    b.Property<DateTime?>("CreatedDate");
 
-                    b.Property<int>("ModifiedBy");
+                    b.Property<int?>("ModifiedBy");
 
-                    b.Property<DateTime>("ModifiedDate");
+                    b.Property<DateTime?>("ModifiedDate");
 
                     b.HasKey("ClassId");
 
@@ -77,15 +77,15 @@ namespace KhssData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<int?>("CreatedBy");
 
-                    b.Property<DateTime>("CreatedDate");
+                    b.Property<DateTime?>("CreatedDate");
 
                     b.Property<string>("Description");
 
-                    b.Property<int>("ModifiedBy");
+                    b.Property<int?>("ModifiedBy");
 
-                    b.Property<DateTime>("ModifiedDate");
+                    b.Property<DateTime?>("ModifiedDate");
 
                     b.Property<string>("SectionName");
 
@@ -102,17 +102,17 @@ namespace KhssData.Migrations
 
                     b.Property<string>("Address");
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<int?>("CreatedBy");
 
-                    b.Property<DateTime>("CreatedDate");
+                    b.Property<DateTime?>("CreatedDate");
 
                     b.Property<string>("FirstName");
 
                     b.Property<string>("LastName");
 
-                    b.Property<int>("ModifiedBy");
+                    b.Property<int?>("ModifiedBy");
 
-                    b.Property<DateTime>("ModifiedDate");
+                    b.Property<DateTime?>("ModifiedDate");
 
                     b.Property<string>("Phone");
 
@@ -127,29 +127,29 @@ namespace KhssData.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<int>("ClassId");
+                    b.Property<int>("ClassRefId");
 
-                    b.Property<int>("CreatedBy");
+                    b.Property<int?>("CreatedBy");
 
-                    b.Property<DateTime>("CreatedDate");
+                    b.Property<DateTime?>("CreatedDate");
 
                     b.Property<bool>("IsActive");
 
-                    b.Property<int>("ModifiedBy");
+                    b.Property<int?>("ModifiedBy");
 
-                    b.Property<DateTime>("ModifiedDate");
+                    b.Property<DateTime?>("ModifiedDate");
 
-                    b.Property<int>("SectionId");
+                    b.Property<int>("SectionRefId");
 
-                    b.Property<int>("StudentId");
+                    b.Property<int>("StudentRefId");
 
                     b.HasKey("StudentClassId");
 
-                    b.HasIndex("ClassId");
+                    b.HasIndex("ClassRefId");
 
-                    b.HasIndex("SectionId");
+                    b.HasIndex("SectionRefId");
 
-                    b.HasIndex("StudentId");
+                    b.HasIndex("StudentRefId");
 
                     b.ToTable("StudentClasses");
                 });
@@ -158,7 +158,7 @@ namespace KhssData.Migrations
                 {
                     b.HasOne("KhssData.DomainModels.Attendance.StudentClass", "StudentClass")
                         .WithMany("Attendances")
-                        .HasForeignKey("StudentClassId")
+                        .HasForeignKey("StudentClassRefId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
@@ -166,17 +166,17 @@ namespace KhssData.Migrations
                 {
                     b.HasOne("KhssData.DomainModels.Attendance.Class", "Class")
                         .WithMany("StudentClasses")
-                        .HasForeignKey("ClassId")
+                        .HasForeignKey("ClassRefId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("KhssData.DomainModels.Attendance.Section", "Section")
                         .WithMany("StudentClasses")
-                        .HasForeignKey("SectionId")
+                        .HasForeignKey("SectionRefId")
                         .OnDelete(DeleteBehavior.Cascade);
 
                     b.HasOne("KhssData.DomainModels.Attendance.Student", "Student")
                         .WithMany("StudentClasses")
-                        .HasForeignKey("StudentId")
+                        .HasForeignKey("StudentRefId")
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 #pragma warning restore 612, 618

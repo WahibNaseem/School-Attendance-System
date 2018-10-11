@@ -8,7 +8,7 @@ namespace KhssData
 {
    public class KhssContext:DbContext
     {
-        public KhssContext(DbContextOptions options) : base(options) { }
+        public KhssContext(DbContextOptions<KhssContext> options) : base(options) { }
 
         public DbSet<Student> Students { get; set; }
         public DbSet<Class> Classes { get; set; }

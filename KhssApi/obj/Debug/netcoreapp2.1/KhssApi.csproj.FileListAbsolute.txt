@@ -3,3 +3,26 @@ C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.Razo
 C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.RazorAssemblyInfo.cs
 C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.AssemblyInfoInputs.cache
 C:\Users\Wahib\source\repos\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.AssemblyInfo.cs
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssApi.deps.json
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssApi.runtimeconfig.json
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssApi.runtimeconfig.dev.json
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssApi.dll
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssApi.pdb
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\Khss.ServiceContracts.dll
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\khss.Services.dll
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssData.dll
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssViewModels.dll
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\khss.Services.pdb
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssData.pdb
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\KhssViewModels.pdb
+C:\code workcamp\KHSS\KhssApi\KhssApi\bin\Debug\netcoreapp2.1\Khss.ServiceContracts.pdb
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.csprojAssemblyReference.cache
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.csproj.CoreCompileInputs.cache
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.RazorAssemblyInfo.cache
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.RazorAssemblyInfo.cs
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.AssemblyInfoInputs.cache
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.AssemblyInfo.cs
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.RazorTargetAssemblyInfo.cache
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.csproj.CopyComplete
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.dll
+C:\code workcamp\KHSS\KhssApi\KhssApi\obj\Debug\netcoreapp2.1\KhssApi.pdb

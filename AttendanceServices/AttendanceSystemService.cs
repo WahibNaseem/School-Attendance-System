@@ -91,7 +91,7 @@ namespace khss.Services
         {
             return GetAllAttendances()
                         .Include(attendance => attendance.StudentClass)
-                        .Where(attendance => attendance.StudentClassId == studenClasstId);
+                        .Where(attendance => attendance.StudentClassRefId == studenClasstId);
         }
         public void AddAttendance(Attendance newAttendance)
         {
@@ -115,23 +115,23 @@ namespace khss.Services
         public IQueryable<StudentClass> GetStudentClassByStudentId(int studentId)
         {
             return GetAllStudentClasses()
-                        .Where(student => student.StudentId == studentId);
+                        .Where(student => student.StudentRefId == studentId);
         }
         public IQueryable<StudentClass> GetStudentClassbyClassId(int clasesId)
         {
             return GetAllStudentClasses()
-                        .Where(cls => cls.ClassId == clasesId);
+                        .Where(cls => cls.ClassRefId == clasesId);
         }
         public IQueryable<StudentClass> GetStudentClassBySectionId(int sectionId)
         {
             return GetAllStudentClasses()
-                        .Where(section => section.SectionId == sectionId);
+                        .Where(section => section.SectionRefId == sectionId);
         }
         public IQueryable<StudentClass> GetStudentByClassAndSectionId(int classId, int sectionId)
         {
             return GetAllStudentClasses()
-                        .Where(stdcls => stdcls.ClassId == classId &&
-                        stdcls.SectionId == sectionId);
+                        .Where(stdcls => stdcls.ClassRefId == classId &&
+                        stdcls.SectionRefId == sectionId);
         }
         #endregion
     }

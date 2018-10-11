@@ -7,9 +7,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KhssApi", "KhssApi\KhssApi.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KhssData", "Khss.Data\KhssData.csproj", "{CE44692F-9D3C-4FB5-B73B-DF7544472980}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Khss.ServiceContracts", "ServiceContracts\Khss.ServiceContracts.csproj", "{981487B3-0994-4E3B-865B-A65910D44869}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Khss.ServiceContracts", "ServiceContracts\Khss.ServiceContracts.csproj", "{981487B3-0994-4E3B-865B-A65910D44869}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "khss.Services", "AttendanceServices\khss.Services.csproj", "{F79694B2-C487-4D11-AB5A-9D8C9E87A37F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "khss.Services", "AttendanceServices\khss.Services.csproj", "{F79694B2-C487-4D11-AB5A-9D8C9E87A37F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KhssViewModels", "KhssViewModels\KhssViewModels.csproj", "{2449FA38-76D4-4E1C-BFF3-C4416FF9483E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F79694B2-C487-4D11-AB5A-9D8C9E87A37F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F79694B2-C487-4D11-AB5A-9D8C9E87A37F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F79694B2-C487-4D11-AB5A-9D8C9E87A37F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2449FA38-76D4-4E1C-BFF3-C4416FF9483E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2449FA38-76D4-4E1C-BFF3-C4416FF9483E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2449FA38-76D4-4E1C-BFF3-C4416FF9483E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2449FA38-76D4-4E1C-BFF3-C4416FF9483E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
