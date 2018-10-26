@@ -1,0 +1,11 @@
+C:\code workcamp\KHSS\KhssApi\Khss.Data\bin\Release\netcoreapp2.1\KhssData.deps.json
+C:\code workcamp\KHSS\KhssApi\Khss.Data\bin\Release\netcoreapp2.1\KhssData.runtimeconfig.json
+C:\code workcamp\KHSS\KhssApi\Khss.Data\bin\Release\netcoreapp2.1\KhssData.runtimeconfig.dev.json
+C:\code workcamp\KHSS\KhssApi\Khss.Data\bin\Release\netcoreapp2.1\KhssData.dll
+C:\code workcamp\KHSS\KhssApi\Khss.Data\bin\Release\netcoreapp2.1\KhssData.pdb
+C:\code workcamp\KHSS\KhssApi\Khss.Data\obj\Release\netcoreapp2.1\KhssData.csprojAssemblyReference.cache
+C:\code workcamp\KHSS\KhssApi\Khss.Data\obj\Release\netcoreapp2.1\KhssData.csproj.CoreCompileInputs.cache
+C:\code workcamp\KHSS\KhssApi\Khss.Data\obj\Release\netcoreapp2.1\KhssData.AssemblyInfoInputs.cache
+C:\code workcamp\KHSS\KhssApi\Khss.Data\obj\Release\netcoreapp2.1\KhssData.AssemblyInfo.cs
+C:\code workcamp\KHSS\KhssApi\Khss.Data\obj\Release\netcoreapp2.1\KhssData.dll
+C:\code workcamp\KHSS\KhssApi\Khss.Data\obj\Release\netcoreapp2.1\KhssData.pdb

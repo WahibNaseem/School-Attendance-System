@@ -1,0 +1,12 @@
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\bin\Release\netcoreapp2.1\Khss.ServiceContracts.deps.json
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\bin\Release\netcoreapp2.1\Khss.ServiceContracts.dll
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\bin\Release\netcoreapp2.1\Khss.ServiceContracts.pdb
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\bin\Release\netcoreapp2.1\KhssData.dll
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\bin\Release\netcoreapp2.1\KhssData.pdb
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.csprojAssemblyReference.cache
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.csproj.CoreCompileInputs.cache
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.AssemblyInfoInputs.cache
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.AssemblyInfo.cs
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.csproj.CopyComplete
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.dll
+C:\code workcamp\KHSS\KhssApi\ServiceContracts\obj\Release\netcoreapp2.1\Khss.ServiceContracts.pdb

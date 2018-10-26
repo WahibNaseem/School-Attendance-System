@@ -6,7 +6,7 @@ using System.Collections.Generic;
 
 namespace KhssApi.Controllers
 {
-    [Produces("application/json")]
+    [Produces("application/xml")]
     [Route("api/[controller]")]
     [ApiController]
     public class AttendanceSysController:ControllerBase
@@ -19,10 +19,12 @@ namespace KhssApi.Controllers
 
 
         //GET: api/values
+        [Produces("application/json")]
         [HttpGet]
         public IEnumerable<Class> Get()
         {
-           var attendance =  _attendanceService.GetAllClasses() as IEnumerable<Class>;
+            //return new string[] { "Wahib", "MVC " };
+            var attendance = _attendanceService.GetAllClasses() as IEnumerable<Class>;
             return attendance;
         }
     }
